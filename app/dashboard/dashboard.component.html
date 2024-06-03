@@ -1,0 +1,13 @@
+<div>ASSEST INFO</div>
+<div class="container">
+<ng-container *ngFor="let item of assestCollection;index as i;trackBy:trackByFun">
+  <div class="main">
+    <div class="as-type">{{item.assestType}}</div>
+    <div class="as-val">{{item.assestVal}}</div>
+    <div class="as-range">{{item.assestrange}}</div>
+  </div>
+</ng-container>
+</div>
+
+<div>Create Assest</div>
+<button (click)="navigate()">Create Assest</button>
